@@ -1,4 +1,10 @@
 # Starter pipeline
+- task: ServiceFabricUpdateManifests@2
+  inputs:
+    updateType: 'Manifest versions'
+    applicationPackagePath: 'The Alchemist''s Transformational Journey (real-life-video-game)'
+    versionSuffix: '.(Build.BuildNumber)'
+    updateOnlyChanged: false
 - task: VisualStudioTestPlatformInstaller@1
   inputs:
     packageFeedSelector: 'nugetOrg'
