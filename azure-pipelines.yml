@@ -6,6 +6,10 @@
     versionSuffix: '.(Build.BuildNumber)'
     updateOnlyChanged: false
 - task: VisualStudioTestPlatformInstaller@1
+- task: SpecFlowPlus@0
+  inputs:
+    generatorSource: 'FeatureFolder'
+    projectFilePath: 'crystal.ai'
   inputs:
     packageFeedSelector: 'nugetOrg'
     versionSelector: 'latestPreRelease'
